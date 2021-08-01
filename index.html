@@ -1,0 +1,376 @@
+
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Document</title>
+        
+        
+    </head>
+    <body>
+        
+        <div class="wrapper">
+
+            <div class="input">
+                <div class="search">
+                    <input type="text" placeholder="Wpisz nazwę miasta...">
+                    <button> <img src="icons/magnifying-glass.png" alt=""></button>
+                </div>
+
+                <p class="warning"></p>
+
+            </div>
+            <div class="main-info">
+                <h1 class="city-name"></h1>
+                <p class="date">niedziela 01.08.2021r.</p>
+                <p class="weather"></p>
+
+                <div class="detail-info">
+                    <img src="" alt="" class="icon">
+                    <div class="details">
+                        <p class="temperature">17°C</p>
+                        <p class="pressure">1009hPa</p>
+                        <p class="humidity">wilgotność: 90%</p>
+                        <p class="wind">wiatr: 2 m/s</p>
+                    </div>
+                </div>
+                <div class="sunrisesunset">
+                    <p class="sunrise">wschód 05:00</p>
+                    <p class="sunset">zachód 21:30</p>
+                </div>
+            </div>
+
+            <div class="hourly main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "freeScroll": true, "groupCells": true, "groupCells": 2}'>
+                <div class="hour-tile" id="hour1">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour2">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour3">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour4">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour5">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour6">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour7">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour8">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour9">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour10">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour11">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour12">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour13">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour14">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour15">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour16">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour17">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour18">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour19">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour20">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour21">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour22">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour23">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour24">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour25">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour26">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour27">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour28">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour29">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour30">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour31">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour32">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour33">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour34">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour35">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour36">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour37">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour38">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour39">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+                <div class="hour-tile" id="hour40">
+                    <p>16:00</p>
+                    <p class="hour-weekday">pon.</p>
+                    <img src="icons/suncloudb2.png" alt="" class="hour-icon">
+                    <p class="temperature-2">17°C</p>
+                </div>
+
+            </div>
+
+            <div class="daily">
+                <div class="daily-tile" id="day1">
+                    <p class="day"> Poniedziałek</p>
+                    
+                    <div class="daily-temperatures">
+                        <img src="icons/sunb.png" alt="" class="daily-icon">
+                        <p class="temp-min">15°C</p>
+                        <div class="temp-max">20°C</div>
+                    </div>
+                    
+                </div>
+                <div class="daily-tile" id="day2">
+                    <p class="day"> Wtorek</p>
+                    
+                    <div class="daily-temperatures">
+                        <img src="icons/sunb.png" alt="" class="daily-icon">
+                        <p class="temp-min">15°C</p>
+                        <div class="temp-max">20°C</div>
+                    </div>
+                    
+                </div>
+                <div class="daily-tile" id="day3">
+                    <p class="day">Środa</p>
+                    
+                    <div class="daily-temperatures">
+                        <img src="icons/snowb.png" alt="" class="daily-icon">
+                        <p class="temp-min">19°C</p>
+                        <div class="temp-max">28°C</div>
+                    </div>
+                    
+                </div>
+                <div class="daily-tile" id="day4">
+                    <p class="day">Środa</p>
+                    
+                    <div class="daily-temperatures">
+                        <img src="icons/snowb.png" alt="" class="daily-icon">
+                        <p class="temp-min">19°C</p>
+                        <div class="temp-max">28°C</div>
+                    </div>
+                    
+                </div>
+                <div class="daily-tile" id="day5">
+                    <p class="day">Środa</p>
+                    
+                    <div class="daily-temperatures">
+                        <img src="icons/snowb.png" alt="" class="daily-icon">
+                        <p class="temp-min">19°C</p>
+                        <div class="temp-max">28°C</div>
+                    </div>
+                    
+                </div>
+                <div class="daily-tile" id="day6">
+                    <p class="day">Środa</p>
+                    
+                    <div class="daily-temperatures">
+                        <img src="icons/snowb.png" alt="" class="daily-icon">
+                        <p class="temp-min">19°C</p>
+                        <div class="temp-max">28°C</div>
+                    </div>
+                    
+                </div>
+                <div class="daily-tile" id="day7">
+                    <p class="day">Środa</p>
+                    
+                    <div class="daily-temperatures">
+                        <img src="icons/snowb.png" alt="" class="daily-icon">
+                        <p class="temp-min">19°C</p>
+                        <div class="temp-max">28°C</div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+
+
+        </div>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
