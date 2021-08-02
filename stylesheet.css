@@ -24,8 +24,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
-  padding: 10px 20px;
+  padding: 15px 20px;
+ 
 }
 
 h1 {
@@ -125,17 +125,19 @@ p.temperature {
 }
 .hourly {
   width: 100%;
-  margin: 5px 0 10px 0;
+  margin: 0 0 10px 0;
+  overflow-x: scroll;
+  display: flex;
+ 
 }
 .hour-tile {
   background-color: rgba( 255, 255, 255, 0.6 );
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
   padding: 5px;
   font-size: 14px;
-  width: 82.5px;
+  
   
   margin-right: 10px;
 }
@@ -147,34 +149,18 @@ p.temperature {
 }
 .hour-icon {
   width: 55px;
+  margin: 0 9px;
 }
-
-.flickity-button, .flickity-button:hover, .flickity-button:active {
-  background: transparent;
-  transform: translateY(-50%);
+.hour-weekday {
+  font-size: 12px;
 }
-.flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-}
-
-.flickity-prev-next-button.previous {
-  left: -7%;
-}
-.flickity-prev-next-button.next {
-  right: -7%;
-}
-/* .flickity-button:disabled {
-  display: none;
-} */
 
 .daily {
   display: flex;
   flex-direction: column;
   width: 100%;
- 
   overflow-y: scroll;
-  height: 150px;
+  height: 140px;
 }
 .daily-tile {
   background-color: rgba( 255, 255, 255, 0.6 );
@@ -200,27 +186,74 @@ p.temperature {
   margin-right: 80px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 480px) {
   .wrapper {
-    width: 350px;
-    
-  }
-  h1 {
-    font-size: 35px;
+    width: 380px;
   }
   .main-info {
     width: 100%;
-    margin: 10px 0 5px 0;
   }
-  .hourly {
-    width: 310px;
+  .hour-icon {
+    margin: 0 6.5px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .wrapper {
+    width: 320px;
+  }
+  .hour-icon {
+    margin: 0 11px;
+  }
+  .daily {
+    font-size: 14px;
+  }
+  .daily-icon {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .body {
+    font-size: 12px;
+  }
+  .wrapper {
+    width: 280px;
+    height: 500px;
+    padding: 10px;
+  }
+  .main-info {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  p.date {
+    font-size: 12px;
+  }
+  p.weather {
+    font-size: 12px;
+  }
+  .icon {
+    width: 60px;
+  }
+  .detail-info {
+    font-size: 12px;
+    margin: 10px 0;
   }
   .hour-tile {
-    width: 96.66px;
+    font-size: 12px;
   }
-    
+  .sunrisesunset {
+    font-size: 12px;
+  }
+  .hour-icon {
+    width: 40px;
+    margin: 0 15px;
+  }
+  .daily {
+    font-size: 12px;
+  }
 }
-
 
 
 

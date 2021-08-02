@@ -43,6 +43,12 @@ const getForecast = (coords, sunriseDate, sunsetDate) => {
 
     let url = forecastApiLink + `lat=${coords.lat}&lon=${coords.lon}` + apiKey + units;
 
+    let hourly = document.querySelector('.hourly');
+    let daily = document.querySelector('.daily');
+
+    hourly.scroll({top: 0, left:0, behavior: "smooth"});
+    daily.scroll({top: 0, left:0, behavior: "smooth"});
+
     axios.get(url)
         .then(res => {
             console.log('one call', res);
@@ -142,7 +148,7 @@ const getForecast = (coords, sunriseDate, sunsetDate) => {
 const getWeather = () => {
     let city;
     let url;
-
+    document.activeElement.blur();
     city = (!input.value) ? 'Poznań' : input.value;
   
     url = apiLink + city + lang + apiKey + units ;
@@ -206,7 +212,7 @@ const getWeather = () => {
                 icon.setAttribute('src', 'icons/fogb.png') // mgła
             } else if (status.id === 800) {
                 icon.setAttribute('src', `icons/sunb${night}.png`) // czyste niebo
-                background.style.backgroundImage = 'url(backgrounds/sunny3.jpg)'
+                background.style.backgroundImage = 'url(backgrounds/sunny.jpg)'
             } else if (status.id === 801) {
                 icon.setAttribute('src', `icons/suncloudb2${night}.png`) // male zachmurzenie
                 background.style.backgroundImage = 'url(backgrounds/clouds1.jpg)'
