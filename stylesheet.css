@@ -15,7 +15,7 @@ body {
   height: 100vh;
   font-family: 'Oxygen', sans-serif;
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
 }
 .wrapper {
   width: 400px;
@@ -50,6 +50,7 @@ input {
 input::placeholder {
   color: #000;
   font-family: 'Oxygen', sans-serif;
+  font-size: 12px;
 }
 input:focus-visible {
     outline: none;
@@ -95,8 +96,8 @@ h1 {
   font-size: 40px;
   font-weight: 300;
 }
+
 p.date {
-  font-size: 16px;
   font-weight: 300;
   color: #606060;
 }
@@ -104,12 +105,8 @@ p.date {
 .detail-info {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  
 }
-p.temperature {
-  font-size: 16px;
-}
+
 
 .icon {
   width: 120px;
@@ -121,7 +118,7 @@ p.temperature {
   justify-content: space-between;
   width: 100%;
   color:#606060;
-  font-size: 14px;
+  
 }
 .hourly {
   width: 100%;
@@ -137,7 +134,7 @@ p.temperature {
   flex-direction: column;
   align-items: center;
   padding: 5px;
-  font-size: 14px;
+  
   
   
   margin-right: 10px;
@@ -187,74 +184,42 @@ p.temperature {
   margin-right: 80px;
 }
 
-@media screen and (max-width: 480px) {
-  .wrapper {
-    width: 380px;
-  }
-  .main-info {
-    width: 100%;
-  }
-  .hour-icon {
-    margin: 0 6.5px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .wrapper {
-    width: 320px;
-  }
-  .hour-icon {
-    margin: 0 11px;
-  }
-  .daily {
-    font-size: 14px;
-  }
-  .daily-icon {
-    margin-right: 50px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .body {
+@media screen and (max-width: 540px) {
+  body {
     font-size: 12px;
   }
   .wrapper {
-    width: 280px;
-    height: 500px;
-    padding: 10px;
-  }
-  .main-info {
-    width: 100%;
-    padding: 5px 10px;
+    width: 300px;
+    height: 500px;;
   }
   h1 {
-    font-size: 26px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
-  p.date {
-    font-size: 12px;
+  .main-info {
+    width: 100%;
   }
-  p.weather {
-    font-size: 12px;
+  .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color:#606060;
   }
   .icon {
     width: 60px;
   }
   .detail-info {
-    font-size: 12px;
-    margin: 10px 0;
-  }
-  .hour-tile {
-    font-size: 12px;
-  }
-  .sunrisesunset {
-    font-size: 12px;
+    margin-bottom: 10px;
   }
   .hour-icon {
     width: 40px;
-    margin: 0 15px;
   }
-  .daily {
-    font-size: 12px;
+  .hourly {
+    height: 100px;
   }
 }
+
 
 
 

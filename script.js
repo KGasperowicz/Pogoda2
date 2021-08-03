@@ -240,5 +240,6 @@ const enterCheck = (event) => {
 
 getWeather();
 btn.addEventListener('click', getWeather)
+window.scrollTo(0, 0);
 input.addEventListener('keyup', enterCheck)
 
