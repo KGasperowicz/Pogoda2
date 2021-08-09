@@ -212,7 +212,8 @@ p.date {
     margin-bottom: 10px;
   }
   .hour-icon {
-    width: 40px;
+    width: 35px;
+    margin: 0 6px;
   }
   .hourly {
     height: 100px;
